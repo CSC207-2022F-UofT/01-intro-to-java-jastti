@@ -177,8 +177,10 @@ public class Basics {
          */
         for (int i = 0; i < arr.length; i++) {
             int current = arr[i];
-            if (current % 2 != 0){
+            if (i % 2 != 0){
                 current_sum += current;
+            } else if (arr.length == 0 | arr.length == 1) {
+                current_sum = 0;
             }
         }
         return current_sum;
